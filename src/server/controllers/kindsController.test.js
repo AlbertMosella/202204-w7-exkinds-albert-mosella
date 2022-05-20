@@ -4,7 +4,7 @@ const {
   createKind,
   deleteKind,
   updateKind,
-  getKind,
+  /* getKind, */
 } = require("./kindsController");
 
 jest.mock("../../database/models/Kinds", () => ({
@@ -97,7 +97,7 @@ describe("Given a deleteKind function", () => {
     });
   });
 });
-
+/* 
 describe("Given a getKind function", () => {
   describe("When invoked with a response and a kind with id 1", () => {
     const req = {
@@ -131,7 +131,7 @@ describe("Given a getKind function", () => {
       expect(res.json).toHaveBeenCalledWith(expectedMessage);
     });
   });
-});
+}); */
 
 describe("Given a updateKind function", () => {
   describe("When invoked whit a response, a kind and the kind id as req param", () => {
