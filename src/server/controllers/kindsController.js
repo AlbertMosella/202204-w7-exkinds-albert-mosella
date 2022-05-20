@@ -71,7 +71,7 @@ const deleteKind = async (req, res, next) => {
 
     if (kind) {
       res.status(200).json({
-        kind,
+        msg: `Your kind has been removed (Kind id: ${idKind})`,
       });
       return;
     }
